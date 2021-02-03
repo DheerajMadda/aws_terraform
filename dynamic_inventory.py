@@ -31,5 +31,5 @@ for key, value in all_groups.items():
     hostobj = {'hosts' : value}
     inventory[key] = hostobj
         
-print(inventory)
+print(json.dumps(inventory))
     
