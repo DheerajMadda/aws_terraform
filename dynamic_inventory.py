@@ -24,15 +24,12 @@ def getgroupofhosts(ec2):
             
     return allgroups 
     
- def main():
-    ec2 = boto3.resource("ec2")
-    all_groups = getgroupofhosts(ec2)
-    inventory = {}
-    for key, value in all_groups.items():
-        hostobj = {'hosts' : value}
-        inventory[key] = hostobj
+ec2 = boto3.resource("ec2")
+all_groups = getgroupofhosts(ec2)
+inventory = {}
+for key, value in all_groups.items():
+    hostobj = {'hosts' : value}
+    inventory[key] = hostobj
         
-    print(inventory)
+print(inventory)
     
- if __name__ == "__main__":
-    main()
