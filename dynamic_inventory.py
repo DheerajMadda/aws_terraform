@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 # Fetch list of servers from AWS and group based on EC2 instance tag name and values
 
