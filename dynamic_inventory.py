@@ -28,7 +28,7 @@ def getgroupofhosts(ec2):
     ec2 = boto3.resource("ec2")
     all_groups = getgroupofhosts(ec2)
     inventory = {}
-    for key, value in all_groups..items():
+    for key, value in all_groups.items():
         hostobj = {'hosts' : value}
         inventory[key] = hostobj
         
