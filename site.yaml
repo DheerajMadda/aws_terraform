@@ -1,7 +1,0 @@
-# Import play books
-- name: Install Kubernetes Dependencies in all Servers
-  import_playbook: kube-dependencies.yaml
-- name: Initialize Kubernetes Master in Master Server
-  import_playbook: master-cluster.yaml
-- name: Get Token from Master and join Workers
-  import_playbook: workers-cluster.yaml
