@@ -16,7 +16,7 @@
   become: yes
   tasks:
   - name:join cluster
-    shell: "{{ hostvars['DUMMY_HOST']['JOIN_COMMAND'] }} >> node_joined.txt"
+    shell: "{{ hostvars['DUMMY_HOST']['JOIN_COMMAND'] }}" >> node_joined.txt
     args:
       chdir: $HOME
       creates: node_joined.txt
